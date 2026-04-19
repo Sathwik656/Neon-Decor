@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Events and Decorations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo/round_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo/round_logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo/round_logo.png">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        gold: '#D4AF37',
+                        dark: '#1A1A1A',
+                        muted: '#6B6B6B',
+                        warmbeige: '#F7F4EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                        calibri: ['Calibri', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-dark font-sans antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+            <a href="#" class="font-serif text-2xl font-semibold tracking-wider">NeonDecor</a>
+
+            <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase items-center">
+                <a href="#about" class="hover:text-gold transition-colors duration-300">About</a>
+                <a href="#services" class="hover:text-gold transition-colors duration-300">Services</a>
+                <a href="#gallery" class="hover:text-gold transition-colors duration-300">Gallery</a>
+                <a href="#reserve"
+                    class="border border-dark px-6 py-2 text-sm uppercase tracking-widest hover:bg-dark hover:text-white transition-all duration-300">Book
+                    Now</a>
+            </div>
+
+            <button id="mobile-menu-button" class="md:hidden flex items-center p-2 text-dark focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-cream border-b border-gray-200 absolute w-full left-0 top-full flex-col px-6 py-4 shadow-lg text-sm tracking-widest uppercase">
+            <a href="#about" class="block py-3 hover:text-gold transition-colors duration-300 mobile-link">About</a>
+            <a href="#services"
+                class="block py-3 hover:text-gold transition-colors duration-300 mobile-link">Services</a>
+            <a href="#gallery" class="block py-3 hover:text-gold transition-colors duration-300 mobile-link">Gallery</a>
+            <a href="#reserve"
+                class="block mt-4 border border-dark px-6 py-3 text-center hover:bg-dark hover:text-white transition-all duration-300 mobile-link">Book
+                Now</a>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center text-center">
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/IMG-20260415-WA0044.jpg');">
+        </div>
+
+        <div class="relative z-20 max-w-4xl px-6">
+            <h1
+                class="font-serif text-5xl md:text-7xl lg:text-8xl text-white font-bold tracking-tight mb-6 drop-shadow-lg">
+                NEON<br>
+                <span class="text-4xl md:text-6xl font-normal italic">Events & Decorations</span>
+            </h1>
+            <p class="text-white text-lg md:text-xl font-light tracking-wide mb-10 max-w-1xl mx-auto drop-shadow-md">
+                Crafting unforgettable moments with elegance, precision, and breathtaking aesthetics.
+            </p>
+            <a href="#reserve"
+                class="bg-white text-dark px-10 py-4 uppercase tracking-widest text-sm hover:bg-gold hover:text-white transition-all duration-300">Book
+                Now
+            </a>
+        </div>
+    </section>
+
+<section id="about" class="py-16 md:py-24 px-6 lg:px-12 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#D4AF37]/15 via-cream to-warmbeige">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="text-center mb-12">
+
+                <h2 class="font-serif text-4xl md:text-6xl uppercase tracking-wide mb-8">About Us</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <p class="text-base md:text-lg leading-relaxed text-muted mb-6">
+                        Welcome to Neon Events and Decorations. This is the space where visions come to life. We specialize in transforming ordinary venues into extraordinary experiences, tailoring every detail to reflect your unique style and story.
+                    </p>
+                    <p class="text-base md:text-lg leading-relaxed text-muted mb-8">
+                        From grand wedding setups to intimate birthday celebrations, our dedicated team ensures flawless execution, premium quality, and an aesthetic that leaves a lasting impression.
+                    </p>
+                    <a href="#services" class="border-b border-dark pb-1 text-xs md:text-sm uppercase tracking-widest hover:text-gold hover:border-gold transition-colors duration-300">Discover Our Offerings</a>
+                </div>
+                
+                <div class="h-64 md:h-96 w-full p-2 border-8 border-gold bg-cream shadow-2xl rounded-sm">
+                    <div class="h-full w-full bg-cover bg-center rounded-sm" style="background-image: url('/logo/logo_1.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full flex items-center justify-center bg-warmbeige py-4">
+        <div class="h-[1px] w-24 bg-gold/40"></div>
+        <div class="w-2 h-2 transform rotate-45 bg-gold mx-4"></div>
+        <div class="h-[1px] w-24 bg-gold/40"></div>
+    </div>
+
+    <section id="services"
+        class="py-24 px-6 lg:px-12 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#D4AF37]/15 via-warmbeige to-white">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <h2 class="font-serif text-4xl md:text-5xl text-center uppercase tracking-wide mb-16">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer text-center">
+                    <div class="h-80 bg-cover bg-center mb-6 overflow-hidden relative shadow-md">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-500 z-10">
+                        </div>
+                        <div class="h-full w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
+                            style="background-image: url('/img/IMG-20260415-WA0020.jpg');"></div>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3">Weddings & Receptions</h3>
+                    <p class="text-muted text-sm px-4">Elegant stages, floral arrangements, and premium lighting to make
+                        your special day truly magical.</p>
+                </div>
+                <div class="group cursor-pointer text-center">
+                    <div class="h-80 bg-cover bg-center mb-6 overflow-hidden relative shadow-md">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-500 z-10">
+                        </div>
+                        <div class="h-full w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
+                            style="background-image: url('/img/IMG-20260415-WA0048.jpg');"></div>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3">Birthdays & Anniversaries</h3>
+                    <p class="text-muted text-sm px-4">Custom balloon arches, neon signage, and themed setups tailored
+                        to your celebration.</p>
+                </div>
+                <div class="group cursor-pointer text-center">
+                    <div class="h-80 bg-cover bg-center mb-6 overflow-hidden relative shadow-md">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-500 z-10">
+                        </div>
+                        <div class="h-full w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
+                            style="background-image: url('/img/corp.jpeg');"></div>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3">Cultural & Corporate</h3>
+                    <p class="text-muted text-sm px-4">Traditional backdrops, corporate event staging, and sophisticated
+                        gala environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full flex items-center justify-center bg-white py-4">
+        <div class="h-[1px] w-24 bg-gold/40"></div>
+        <div class="w-2 h-2 transform rotate-45 bg-gold mx-4"></div>
+        <div class="h-[1px] w-24 bg-gold/40"></div>
+    </div>
+
+    <section id="gallery" class="py-24 px-6 lg:px-12 bg-gradient-to-b from-gold/30 via-white to-gray-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="font-serif text-4xl md:text-5xl uppercase tracking-wide mb-4">Showcase</h2>
+                <p class="text-muted tracking-widest text-sm uppercase">Explore our curated events</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row relative mb-32 items-start gap-8 md:gap-16">
+                <div
+                    class="w-full md:w-1/3 sticky top-32 z-10 bg-white/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none py-4 md:py-0">
+                    <span class="text-gold text-sm tracking-widest uppercase mb-2 block font-semibold">01</span>
+                    <h3 class="font-serif text-4xl uppercase tracking-widest text-dark mb-4">Weddings & <br> Receptions
+                    </h3>
+                    <p class="text-muted text-sm leading-relaxed">
+                        Breathtaking floral arrangements, elegant staging, and premium lighting designed to make your
+                        special day truly unforgettable.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-2/3 flex flex-col gap-12">
+                    <div class="overflow-hidden group shadow-lg">
+                        <img src="/img/IMG-20260415-WA0043.jpg" alt="Wedding Stage Pink"
+                            class="w-full h-auto max-h-[80vh] object-cover group-hover:scale-[1.03] transition-transform duration-700">
+                    </div>
+                    <div class="overflow-hidden group shadow-lg">
+                        <img src="/img/IMG-20260415-WA0057.jpg" alt="Wedding Copper Frame"
+                            class="w-full h-auto max-h-[80vh] object-cover group-hover:scale-[1.03] transition-transform duration-700">
+                    </div>
+                    <div class="overflow-hidden group shadow-lg">
+                        <img src="/img/IMG-20260415-WA0010.jpg" alt="Wedding Blue Theme"
+                            class="w-full h-auto max-h-[80vh] object-cover group-hover:scale-[1.03] transition-transform duration-700">
+                    </div>
+                    <div class="overflow-hidden group shadow-lg">
+                        <img src="/img/IMG-20260415-WA0008.jpg" alt="Traditional Wedding Setup"
+                            class="w-full h-auto max-h-[80vh] object-cover group-hover:scale-[1.03] transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row relative mb-12 items-start gap-8 md:gap-16">
+                <div
+                    class="w-full md:w-1/3 sticky top-32 z-10 bg-white/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none py-4 md:py-0">
+                    <span class="text-gold text-sm tracking-widest uppercase mb-2 block font-semibold">02</span>
+                    <h3 class="font-serif text-4xl uppercase tracking-widest text-dark mb-4">Birthdays</h3>
+                    <p class="text-muted text-sm leading-relaxed">
+                        Vibrant balloon garlands, custom neon signage, and personalized themes tailored to celebrate
+                        milestones in style.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-2/3 flex flex-col gap-12">
+                    <div class="overflow-hidden group shadow-lg">
+                        <img src="/img/IMG-20260419-WA0023.jpg" alt="Birthday Balloon Setup"
+                            class="w-full h-auto max-h-[80vh] object-cover group-hover:scale-[1.03] transition-transform duration-700">
+                    </div>
+                    <div class="overflow-hidden group shadow-lg">
+                        <img src="/img/IMG-20260415-WA0033.jpg" alt="Birthday Balloon Setup 2"
+                            class="w-full h-auto max-h-[80vh] object-cover group-hover:scale-[1.03] transition-transform duration-700">
+                    </div>
+                    <div class="overflow-hidden group shadow-lg">
+                        <img src="/img/IMG-20260415-WA0031.jpg" alt="Birthday Balloon Setup 3"
+                            class="w-full h-auto max-h-[80vh] object-cover group-hover:scale-[1.03] transition-transform duration-700">
+                    </div>
+                    <div class="overflow-hidden group shadow-lg">
+                        <img src="/img/1000479926.jpg" alt="Birthday Balloon Setup 4"
+                            class="w-full h-auto max-h-[80vh] object-cover group-hover:scale-[1.03] transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESERVATION SECTION — SPLIT LAYOUT ===== -->
+    <section id="reserve" class="py-24 bg-[#EBE9E4] px-6 lg:px-12">
+        <div class="max-w-6xl mx-auto">
+
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl uppercase tracking-wide mb-4">Book an event</h2>
+                <p class="text-muted">Choose how you'd like to reach us</p>
+            </div>
+
+            <!-- Split Layout -->
+            <div class="flex flex-col md:flex-row gap-0 items-stretch">
+
+
+                <!-- LEFT: WhatsApp Contact -->
+                <div
+                    class="flex-1 bg-white p-8 md:p-10 shadow-sm border border-gray-200 flex flex-col items-center justify-center text-center gap-6">
+                    <h3 class="font-serif text-2xl text-dark">Chat With Us Instantly</h3>
+                    <p class="text-muted text-sm leading-relaxed max-w-xs">
+                        Prefer a quick conversation? Reach our manager directly on WhatsApp for faster responses and
+                        real-time assistance.
+                    </p>
+
+                    <!-- WhatsApp Logo SVG -->
+                    <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#25D366] shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="w-12 h-12" fill="white">
+                            <path
+                                d="M24 4C12.95 4 4 12.95 4 24c0 3.55.93 6.87 2.56 9.76L4 44l10.54-2.52A19.87 19.87 0 0 0 24 44c11.05 0 20-8.95 20-20S35.05 4 24 4zm0 36c-3.07 0-5.97-.8-8.48-2.2l-.6-.35-6.26 1.5 1.55-5.98-.4-.63A15.93 15.93 0 0 1 8 24c0-8.82 7.18-16 16-16s16 7.18 16 16-7.18 16-16 16zm8.74-11.9c-.48-.24-2.84-1.4-3.28-1.56-.44-.16-.76-.24-1.08.24-.32.48-1.24 1.56-1.52 1.88-.28.32-.56.36-1.04.12-.48-.24-2.02-.74-3.85-2.36-1.42-1.26-2.38-2.82-2.66-3.3-.28-.48-.03-.74.21-.98.22-.22.48-.56.72-.84.24-.28.32-.48.48-.8.16-.32.08-.6-.04-.84-.12-.24-1.08-2.6-1.48-3.56-.38-.92-.78-.8-1.08-.82H16.9c-.32 0-.84.12-1.28.6-.44.48-1.68 1.64-1.68 4s1.72 4.64 1.96 4.96c.24.32 3.38 5.16 8.2 7.24 1.15.5 2.04.8 2.74 1.02 1.15.36 2.2.31 3.02.19.92-.14 2.84-1.16 3.24-2.28.4-1.12.4-2.08.28-2.28-.12-.2-.44-.32-.92-.56z" />
+                        </svg>
+                    </div>
+
+                    <!-- Manager number — replace with actual number in international format (no + or spaces) -->
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-muted mb-1">Girish K</p>
+                        <p class=" text-xl text-dark tracking-wide">+91 97437 04284</p>
+                    </div>
+
+                    <!-- 
+                        WhatsApp link: Replace 12345678900 with the manager's number
+                        in full international format without + or spaces. E.g. for +91 98765 43210 → 919876543210
+                    -->
+                    <a href="https://wa.me/919743704284" target="_blank"
+                        class="bg-[#25D366] text-white px-12 py-4 uppercase tracking-widest text-sm hover:bg-[#1DA851] transition-colors duration-300 w-full inline-block">
+                        Contact Now
+                    </a>
+
+                    <p class="text-xs text-muted">Typically replies within minutes</p>
+                </div>
+
+
+                <!-- MIDDLE: OR Divider -->
+                <div class="flex md:flex-col items-center justify-center px-4 py-6 md:py-0 md:px-6 gap-3">
+                    <div class="flex-1 md:flex-none md:h-24 w-full md:w-px h-px bg-gray-300"></div>
+                    <span class="font-serif text-xl text-muted italic whitespace-nowrap">OR</span>
+                    <div class="flex-1 md:flex-none md:h-24 w-full md:w-px h-px bg-gray-300"></div>
+                </div>
+
+                <!-- Right: Reservation Form -->
+                <div class="flex-1 bg-white p-8 md:p-10 shadow-sm border border-gray-200">
+                    <h3 class="font-serif text-2xl mb-6 text-dark">Send Us a Request</h3>
+
+                    <!-- 
+                        FORMSUBMIT INTEGRATION:
+                        Replace YOUR_MANAGER_EMAIL below with the manager's actual email address.
+                        On first submission, FormSubmit will send a confirmation email to activate the endpoint.
+                        You can also add a hidden _next field to redirect after submission.
+                    -->
+                    <form action="https://formsubmit.co/YOUR_MANAGER_EMAIL" method="POST">
+
+                        <!-- FormSubmit config fields -->
+                        <input type="hidden" name="_subject" value="New Reservation Request — NeonDecor">
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Optional: redirect after submit — replace with your thank-you page URL -->
+                        <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-muted mb-2">Full Name</label>
+                                <input type="text" name="full_name" required
+                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-dark transition-colors"
+                                    placeholder="Your name">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-muted mb-2">Contact
+                                    Number</label>
+                                <input type="tel" name="contact_number" required
+                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-dark transition-colors"
+                                    placeholder="+91 9999999999">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-muted mb-2">Event
+                                    Type</label>
+                                <select name="event_type"
+                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-dark transition-colors bg-transparent text-dark">
+                                    <option>Wedding</option>
+                                    <option>Birthday</option>
+                                    <option>Corporate Event</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-muted mb-2">Event
+                                    Date</label>
+                                <input type="date" name="event_date"
+                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-dark transition-colors text-dark">
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="block text-xs uppercase tracking-widest text-muted mb-2">Message &
+                                Details</label>
+                            <textarea name="message" rows="3"
+                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-dark transition-colors resize-none"
+                                placeholder="Tell us about your vision, venue size, and specific requirements..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="bg-dark text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-gold transition-colors duration-300 w-full">
+                            Reserve Now
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===== END RESERVATION SECTION ===== -->
+
+    <footer class="bg-dark text-white py-16 px-6 lg:px-12 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <h4 class="font-serif text-3xl tracking-wide mb-6">NeonDecor</h4>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                    Bringing aesthetic perfection to your celebrations. Let's create something beautiful together.
+                </p>
+            </div>
+            <div class="flex flex-col space-y-3 text-sm tracking-widest uppercase text-gray-300">
+                <a href="#about" class="hover:text-gold transition-colors">About</a>
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                <a href="#gallery" class="hover:text-gold transition-colors">Gallery</a>
+                <a href="#reserve" class="hover:text-gold transition-colors">Contact</a>
+            </div>
+            <div class="text-gray-400 text-sm">
+                <p class="mb-2 uppercase tracking-widest text-white text-xs">Reach Us</p>
+                <p class="mb-2">contact@neondecor.com</p>
+                <p class="mb-6">+1 (234) 567-890</p>
+                <p class="uppercase tracking-widest text-white text-xs mb-2">Follow Us</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="hover:text-gold transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-gold transition-colors">Facebook</a>
+                    <a href="#" class="hover:text-gold transition-colors">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 text-center text-xs text-gray-500 uppercase tracking-widest">
+            &copy; 2026 Neon Events and Decorations. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Toggle menu on button click
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
